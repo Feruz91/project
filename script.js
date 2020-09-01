@@ -175,29 +175,29 @@
 
 
                     /* Иван Петриченко */
-"use strict"; /* Режим современного кода */
+// "use strict"; /* Режим современного кода */
 
-let number = 4.6;       /* Числовой тип  */
+// let number = 4.6;       /* Числовой тип  */
 
-const persone = 'Alex'; /* Строковой тип */
+// const persone = 'Alex'; /* Строковой тип */
 
-// console.log(something); /* null тип несуществующий объект */ 
+// // console.log(something); /* null тип несуществующий объект */ 
 
-let und;
-console.log(und);       /* undefined тип  пустой элемент */
+// let und;
+// console.log(und);       /* undefined тип  пустой элемент */
 
 
-const obj = {
-   name: "John",
-   age: 25,
-   isMarried: false
-}
+// const obj = {
+//    name: "John",
+//    age: 25,
+//    isMarried: false
+// }
 
-console.log(obj.name);
-// console.log(obj ["name"]);
+// console.log(obj.name);
+// // console.log(obj ["name"]);
 
-let arr = ['plumb.png', 'orange.jpg', 'apple.bmp', {}, []];
-console.log(arr[1]);
+// let arr = ['plumb.png', 'orange.jpg', 'apple.bmp', {}, []];
+// console.log(arr[1]);
 
 // const result = confirm("Are you here?");
 // console.log(result);
@@ -221,21 +221,44 @@ console.log(arr[1]);
 
 // alert(`Привет, ${user}`);
 
-let incr = 10,
-    decr = 10;
+// let incr = 10,
+//     decr = 10;
 
 // incr++;             /* Оператор инкримента */     /* Постфиксная форма */
 // decr--;             /* Оператор декримента */
 
-console.log(++incr);    /* Префиксная форма */
-console.log(--decr);
+// console.log(++incr);    /* Префиксная форма */
+// console.log(--decr);
 
-console.log(5%2);        /* Остаток от деления */
+// console.log(5%2);        /* Остаток от деления */
 
-console.log(2*4 == '8');  /* Сравнение по значению */
-console.log(2*4 === 8);  /* Сравнение и по типу данных, строгое сравнение */
+// console.log(2*4 == '8');  /* Сравнение по значению */
+// console.log(2*4 === 8);  /* Сравнение и по типу данных, строгое сравнение */
 
-const isChecked = true,
-      isClosed = true; 
+// const isChecked = true,
+//       isClosed = true; 
       
-console.log(isChecked && isClosed);
+// console.log(isChecked && isClosed);
+
+
+
+                                        /* Практика */
+const numberOfFilms = +prompt('Сколько  фильмов вы уже посмотрели?', '');
+
+const personalMovieDb = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+const a = prompt('Один из последних просмотренных - фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных - фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
+
+    personalMovieDb.movies[a] = b;
+    personalMovieDb.movies[c] = d;
+
+    console.log(personalMovieDb);
